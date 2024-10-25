@@ -33,7 +33,7 @@ if settings.startup["train-battery-pack-energy-density-setting"].value == "80 MJ
   data.raw["item"]["electric-train-alkaline-battery-pack"].fuel_value = "240MJ"
 end
 
-if settings.startup["train-battery-decay-enable-setting"].value then
+if settings.startup["train-battery-decay-enable-setting"].value == "true" then
   data:extend({{
     type = "item",
     name = "electric-train-destroyed-battery-pack",
@@ -214,10 +214,12 @@ if settings.startup["train-battery-decay-enable-setting"].value then
 })
 else
   data.raw["recipe"]["electric-train-battery-pack-recharge"].results = {{
+    type = "item",
     name = "electric-train-battery-pack",
     amount = 1
   }}
   data.raw["recipe"]["faster-electric-train-battery-pack-recharge"].results = {{
+    type = "item",
     name = "electric-train-battery-pack",
     amount = 1
   }}
