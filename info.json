@@ -1,15 +1,13 @@
 {
   "name": "electric-trains",
-  "version": "0.2.13",
-  "title": "Electric Trains",
-  "author": "NerfKidJcb",
+  "version": "0.3.0",
+  "title": "Electric Trains: Space Age rebalance",
+  "author": "forked by Eilrovisoft, original by NerfKidJcb",
   "factorio_version": "2.0",
   "description": "This should be overwritten by the Factorio mod page unless you downloaded this manually. Check out the link below :)",
   "dependencies": [
     "base >= 2.0",
-    "? space-exploration >= 0.5.103",
-    "? Krastorio2 >= 1.2.21",
-    "? space-age >= 0.2.0"
+    "space-age >= 0.2.0"
   ],
   "package": {
     "ignore": [
